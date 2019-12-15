@@ -4,10 +4,10 @@ require 'environment.php';
 $config = array();
 if(ENVIRONMENT == 'development') {
 	define("BASE_URL", "http://localhost/intra/");
-	$config['dbname'] = 'banco';
+	$config['dbname'] = 'UmBanco';
 	$config['host'] = 'localhost';
-	$config['dbuser'] = 'root';
-	$config['dbpass'] = '';
+	$config['dbuser'] = 'senha';
+	$config['dbpass'] = 'senha';
 } else {
 	define("BASE_URL", "http://localhost/nova_loja_painel/");
 	$config['dbname'] = 'loja2';
