@@ -9,6 +9,7 @@ class Controller {
 	}
 
 	public function loadTemplate($viewName, $viewData = array()) {
+		extract($viewData);
 		require 'Views/template.php';
 	}
 

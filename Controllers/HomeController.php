@@ -2,15 +2,22 @@
 namespace Controllers;
 
 use \Core\Controller;
-use \Models\Exemplo;
+use \Models\User;
 
 class HomeController extends Controller {
 
 	public function index() {
 		$array = array();
 
-		$exemplo = new Exemplo();
+		$use = new User();
+		$array = $use->getAll();
 
+		$this->loadTemplate('home', $array);
+	}
+
+	public function metodo(){
+		$array = ['nome'=>'Vagner Rosario', 'start'=>'1'];
+		
 		$this->loadTemplate('home', $array);
 	}
 

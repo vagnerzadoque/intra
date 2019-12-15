@@ -10,9 +10,13 @@
 <body>
         <nav class="jumbotron bg-primary">
 
-          <a href="http://"> Um</a>
-          <a href="http://"> Dois</a>
-          <a href="http://"> Tres</a>
+        <div class="row">
+        
+          <a href="<?php echo BASE_URL ?>home/metodo" class="col text-white"> Um </a>
+          <a href="metodo2" class="col text-white"> Dois </a>
+          <a href="metodo3" class="col text-white"> Tres </a>
+        
+        </div>
         </nav>
 
 <!-- Introduz as Views -->
