@@ -2,7 +2,7 @@
 <div class="container bg-warning mt-0">
 
 <div id="login">
-        <h1 class="text-center text-white pt-5">Intranet</h1>
+        <h1 class="text-center text-white pt-5">Nova Senha</h1>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-4">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,13 @@
   <title>Intranet Poligono</title>
 </head>
 <body>
-        <nav class="jumbotron bg-primary">
+        <nav class="jumbotron bg-primary mb-0">
 
         <div class="row">
         
           <a href="<?php echo BASE_URL ?>home/metodo" class="col text-white"> Um </a>
-          <a href="metodo2" class="col text-white"> Dois </a>
-          <a href="metodo3" class="col text-white"> Tres </a>
+          <a href="<?php echo BASE_URL ?>home" class="col text-white"> Dois </a>
+          <a href="<?php echo BASE_URL ?>home/Sair" class="col text-white"> Tres </a>
         
         </div>
         </nav>
