@@ -27,14 +27,28 @@ class HomeController extends Controller {
 		$array = array();
 		
 		
-		
-		$this->loadTemplate('template', 'home', $array);
+		if($_SESSION['perfil'] ==='admin'){
+
+			$this->loadTemplate('template_mt', 'home_mt', $array);
+		}else{
+			$this->loadTemplate('template', 'home', $array);
+		}
 	}
 
-	public function metodo(){
-		$array =[];
+	public function novaSenha(){
+		$array = array();
+		if(!empty($_POST['senha1']) && !empty($_POST['senha2'])){
+
+			$s = new User();
+			$tk = $_SESSION['token'];
+			$status_senha = $_SESSION['status_senha'];
+			$senha = $s->UpdateSenha($_POST, $tk, $status_senha );
+			
+			
+			
+		}
 		
-		$this->loadTemplate('template','home', $array);
+		header('Location:'.BASE_URL.'home');
 	}
 
 	public function Sair(){

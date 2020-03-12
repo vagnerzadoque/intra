@@ -63,3 +63,9 @@
 
 
 </div>
+<?php
+        var_dump($_SESSION)
+?>
+
+<script> var session = "<?php echo $_SESSION['status_senha'];?>" </script> 
+

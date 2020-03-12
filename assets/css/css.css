@@ -1,0 +1,86 @@
+.fullpage-senha{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(70, 43, 226);
+    z-index: 999;
+    color: rgb(223, 203, 241);
+}
+
+
+@keyframes myanime {
+    0% {transform: rotateX(0deg);}
+    25% {transform: rotateX(40deg);}
+    50% {transform: rotateX(30deg);}
+     75% {transform: rotateX(70deg);}
+     85% {transform: translateX(300px);}
+     90% {opacity: 9;}
+     100% {opacity: 0;}
+  }
+
+  .quadro1{
+    transition: all .6s;
+    box-sizing: border-box;
+   /*  padding: 40px; */
+    transform: rotateX(70deg);
+    transform: translateX(300px);
+    animation-name: myanime1;
+     /*  animation-duration: 7s; */
+    /* animation-iteration-count: 1; */
+    opacity: 0;
+  }
+
+
+  /* Inactive/Active Default input field color */ 
+  .input-field input[type]:not([readonly]),
+  .input-field input[type]:focus:not([readonly]),
+   .input-field textarea:not([readonl]),
+    .input-field textarea:focus:not([readonly]){ 
+    border-bottom: .2px solid #454546; box-shadow: 0 .1px 0 0 #545455; }
+     /* Inactive/Active Default input label color */ 
+     .input-field input[type]:focus:not([readonly])+label,
+      .input-field textarea:focus:not([readonly])+label{ color: #5e5f5f; }
+       /* Active/Inactive Invalid input field colors */ 
+       .input-field input[type].invalid, 
+       .input-field input[type].invalid:focus, 
+       .input-field textarea.invalid, 
+       .input-field textarea.invalid:focus{ 
+           border-bottom: .1px solid #616060; 
+           box-shadow: 0 .1px 0 0 #6d6c6c; } 
+/* Active/Inactive Invalid input label color */ 
+.input-field input[type].invalid:focus+label, 
+.input-field input[type].invalid~.helper-text::after, 
+.input-field input[type].invalid:focus~.helper-text::after, 
+.input-field textarea.invalid:focus+label, 
+.input-field textarea.invalid~.helper-text::after, 
+.input-field textarea.invalid:focus~.helper-text::after{ color: #706f6f; } 
+/* Active/Inactive Valid input field color */ 
+.input-field input[type].valid, 
+.input-field input[type].valid:focus, .input-field textarea.valid, 
+.input-field textarea.valid:focus{ 
+    border-bottom: .2px solid #7e7e81; box-shadow: 0 .1px 0 0 #878788; }
+
+   /* Active/Inactive Valid input label color */ 
+   .input-field input[type].valid:focus+label, 
+   .input-field input[type].valid~.helper-text::after, 
+   .input-field input[type].valid:focus~.helper-text::after, 
+   .input-field textarea.valid:focus+label, 
+   .input-field textarea.valid~.helper-text::after, .input-field textarea.valid:focus~.helper-text::after { color: #666b6b; } 
+
+   /* Icones Materialize */
+   /* .material-icons{ color: #1a237e !important; } .material-icons.active { color: #b71c1c !important; } */
+
+   /* Campo texto */
+   .input-field input[type=text] + label,
+    .materialize-textarea:focus:not([readonly]) + label { color: #59595c !important; } 
+    .input-field input[type=text], 
+    .materialize-textarea:focus:not([readonly]) { border-bottom: .1px solid #656568 !important; box-shadow: 0 .1px 0 0 #828288 !important; } 
+    .input-field input[type=text]:focus + label, 
+    .materialize-textarea:focus:not([readonly]) + label { color: #656568 !important; } 
+    .input-field input[type=text]:focus, 
+    .materialize-textarea:focus:not([readonly]) { border-bottom: .1px solid #99999c !important; box-shadow: 0 .1px 0 0 #616163 !important; }
+    .input-field input[type=email]:focus, 
+    .materialize-textarea:focus:not([readonly]) { border-bottom: .1px solid #77767c !important; box-shadow: 0 .1px 0 0 #747475 !important; }
